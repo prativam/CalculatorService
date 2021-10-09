@@ -8,7 +8,6 @@ app.use(express.json());
 
 app.post('/store', (req, res) => {
     try {
-        debugger
         const data = req.body.toString()
         const args = data.split(",")
         if (args.length === 2 && parseInt(args[0]) && parseInt(args[1])){
