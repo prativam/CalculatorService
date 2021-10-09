@@ -47,7 +47,7 @@ app.get('/sub', (req, res) => {
         var arg2 = parseInt(args[1])
         res.status(200).send("Subtraction - " + (arg1 - arg2))
     } catch (err) {
-        res.status(404).send("Arguemnet not found. Please send argument using sendargs api");
+        res.status(404).send("Arguemnet not found. Please send argument using sendargs api")
     }
 })
 app.get('/mul', (req, res) => {
@@ -60,7 +60,7 @@ app.get('/mul', (req, res) => {
         var arg2 = parseInt(args[1])
         res.status(200).send("Multiplication - " + (arg1 * arg2))
     } catch (err) {
-        res.status(404).send("Arguemnet not found. Please send argument using sendargs api");
+        res.status(404).send("Arguemnet not found. Please send argument using sendargs api")
     }
 })
 app.get('/div', (req, res) => {
@@ -73,7 +73,7 @@ app.get('/div', (req, res) => {
         var arg2 = parseInt(args[1])
         res.status(200).send("Division - " + (arg1 / arg2))
     } catch (err) {
-        res.status(404).send("Arguemnet not found. Please send argument using sendargs api");
+        res.status(404).send("Arguemnet not found. Please send argument using sendargs api")
     }
 })
 app.listen(port, () => {
